@@ -4,6 +4,14 @@ type Duck struct {
 	quackBehavior QuackBehavior
 }
 
+func newDuck(q QuackBehavior) *Duck {
+	d := &Duck{}
+
+	d.setQuackBehavior(q)
+
+	return d
+}
+
 func (d *Duck) display() {}
 
 func (d *Duck) performQuack() {

@@ -1,11 +1,7 @@
 package main
 
 func main() {
-	// TODO: Create a newFlyerDuck and newDuck methods
-	duck := FlyerDuck{}
-
-	duck.setFlyBehavior(FastFly{})
-	duck.setQuackBehavior(AngryQuack{})
+	duck := newFlyerDuck(AngryQuack{}, FastFly{})
 
 	duck.performFly()
 	duck.performQuack()
