@@ -1,5 +1,12 @@
 package main
 
-// TODO: Check if the translation to Go is coerent
 func main() {
+	// TODO: Create a newFlyerDuck and newDuck methods
+	duck := FlyerDuck{}
+
+	duck.setFlyBehavior(FastFly{})
+	duck.setQuackBehavior(AngryQuack{})
+
+	duck.performFly()
+	duck.performQuack()
 }
